@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,350 +14,263 @@
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
 
-
-   <!--Style Sheet Section Code-->
-
-   <style>
-      /* Initial state of chatbot container */
-      #chatbot-container {
-         display: none;
-         position: fixed;
-         bottom: 20px;
-         right: 20px;
-         width: 300px;
-         height: 400px;
-         background: #fff;
-         border: 1px solid #ccc;
-         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-         z-index: 1000;
-      }
-
-      .chatbot-visible {
-         display: block;
-      }
-
-      .chatbot-hidden {
-         display: none;
-      }
-
-      .chatbot-toggle-btn {
-         position: fixed;
-         bottom: 20px;
-         right: 20px;
-         z-index: 1001;
-         padding: 10px 20px;
-         background: #2563eb;
-         color: #fff;
-         border: none;
-         border-radius: 5px;
-         cursor: pointer;
-      }
-   </style>
-
 </head>
-
 <body>
-
-
-   <header class="header">
-
-      <section class="flex">
-
-         <a href="index.html" class="logo">Sterling😋</a>
-
-         <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="menu.html">Menu</a>
-            <a href="orders.html">Orders</a>
-         </nav>
-
-         <div class="icons">
-            <div id="user-btn" class="fas fa-user"></div>
-            <div id="menu-btn" class="fas fa-bars"></div>
-         </div>
-
-         <div class="profile">
-            <p class="name">Sterling Foods</p>
-            <p>Order Via Call</p>
-            <p>+233 24 038 4438</p>
-            <p>+233 59 394 2191</p>
-         </div>
    
 
-      </section>
+<header class="header">
 
-   </header>
+   <section class="flex">
 
-   <section class="home">
+      <a href="home.html" class="logo">Sterling 😋</a>
 
-      <div class="swiper home-slider">
+      <nav class="navbar">
+         <a href="home.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="menu.html">Menu</a>
+         <a href="orders.html">Orders</a>
+         <a href="contact.html">Contact</a>
+      </nav>
 
-         <div class="swiper-wrapper">
+      <div class="icons">
+         <a href="search.html"><i class="fas fa-search"></i></a>
+         <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
 
-            <div class="swiper-slide slide">
-               <div class="content">
-                  <span>Order Via Call</span>
-                  <h3>Delicious Pizza</h3>
-                  <a href="menu.html" class="btn">See Menus</a>
-               </div>
-               <div class="image">
-                  <img src="images/home-img-1.png" alt="">
-               </div>
-            </div>
-
-            <div class="swiper-slide slide">
-               <div class="content">
-                  <span>Order Via Call</span>
-                  <h3>Double Hamburger</h3>
-                  <a href="menu.html" class="btn">See Menus</a>
-               </div>
-               <div class="image">
-                  <img src="images/home-img-2.png" alt="">
-               </div>
-            </div>
-
-            <div class="swiper-slide slide">
-               <div class="content">
-                  <span>Order Via Call</span>
-                  <h3>Roasted Chicken</h3>
-                  <a href="menu.html" class="btn">See Menus</a>
-               </div>
-               <div class="image">
-                  <img src="images/home-img-3.png" alt="">
-               </div>
-            </div>
-
+      <div class="profile">
+         <p class="name">Sterling</p>
+         <div class="flex">
+            <a href="profile.html" class="btn">Profile</a>
+            <a href="#" class="delete-btn">Logout</a>
          </div>
-
-         <div class="swiper-pagination"></div>
-
+         <p class="account"><a href="login.html">Login</a> or <a href="register.html">Register</a></p>
       </div>
 
    </section>
 
-   <section class="category">
+</header>
 
-      <h1 class="title">Food Category</h1>
+<section class="home">
 
-      <div class="box-container">
+   <div class="swiper home-slider">
 
-         <a href="#" class="box">
-            <img src="images/cat-1.png" alt="">
-            <h3>Fast Food</h3>
-         </a>
+      <div class="swiper-wrapper">
 
-         <a href="#" class="box">
-            <img src="images/cat-2.png" alt="">
-            <h3>Main Dishes</h3>
-         </a>
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>Order Online</span>
+               <h3>Delicious Pizza</h3>
+               <a href="menu.html" class="btn">See Menus</a>
+            </div>
+            <div class="image">
+               <img src="images/home-img-1.png" alt="">
+            </div>
+         </div>
 
-         <a href="#" class="box">
-            <img src="images/cat-3.png" alt="">
-            <h3>Drinks</h3>
-         </a>
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>Order Online</span>
+               <h3>Double Hamburger</h3>
+               <a href="menu.html" class="btn">See Menus</a>
+            </div>
+            <div class="image">
+               <img src="images/home-img-2.png" alt="">
+            </div>
+         </div>
 
-         <a href="#" class="box">
-            <img src="images/cat-4.png" alt="">
-            <h3>Desserts</h3>
-         </a>
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>Order Online</span>
+               <h3>Roasted Chicken</h3>
+               <a href="menu.html" class="btn">See Menus</a>
+            </div>
+            <div class="image">
+               <img src="images/home-img-3.png" alt="">
+            </div>
+         </div>
 
       </div>
 
-   </section>
+      <div class="swiper-pagination"></div>
 
-   <section class="products">
-
-      <h1 class="title">latest dishes</h1>
-
-      <div class="box-container">
-
-         <form accept="" method="post" class="box">
-
-
-            <img src="uploaded_img/pizza-1.png" alt="">
-            <a href="category.html" class="cat">fast food</a>
-            <div class="name">Hawaii Vegetarian Pizza</div>
-            <div class="flex">
-               <div class="price"><span>$</span>70</div>
-
-            </div>
-         </form>
-
-         <form accept="" method="post" class="box">
-
-            <img src="uploaded_img/dish-1.png" alt="">
-            <a href="category.html" class="cat">dishes</a>
-            <div class="name">Noodles</div>
-            <div class="flex">
-               <div class="price"><span>$</span>30</div>
-            </div>
-         </form>
-
-         <form accept="" method="post" class="box">
-
-
-            <img src="uploaded_img/burger-1.png" alt="">
-            <a href="category.html" class="cat">fast food</a>
-            <div class="name">Cheeseburger</div>
-            <div class="flex">
-               <div class="price"><span>$</span>25</div>
-
-            </div>
-         </form>
-
-         <form accept="" method="post" class="box">
-            <img src="uploaded_img/dessert-1.png" alt="">
-            <a href="category.html" class="cat">dessert</a>
-            <div class="name">Strawberry Smoothie</div>
-            <div class="flex">
-               <div class="price"><span>$</span>10</div>
-
-            </div>
-         </form>
-
-         <form accept="" method="post" class="box">
-            <img src="uploaded_img/drink-1.png" alt="">
-            <a href="category.html" class="cat">drinks</a>
-            <div class="name">Fresh Orange Juice</div>
-            <div class="flex">
-               <div class="price"><span>$</span>12</div>
-
-            </div>
-         </form>
-
-         <form accept="" method="post" class="box">
-            <img src="uploaded_img/dish-2.png" alt="">
-            <a href="category.html" class="cat">dishes</a>
-            <div class="name">Mushroom Noodles</div>
-            <div class="flex">
-               <div class="price"><span>$</span>15</div>
-
-            </div>
-         </form>
-
-      </div>
-
-      <div class="more-btn">
-         <a href="menu.html" class="btn">veiw all</a>
-      </div>
-
-   </section>
-
-
-
-
-   <footer class="footer">
-
-      <section class="box-container">
-
-         <div class="box">
-            <img src="images/email-icon.png" alt="">
-            <h3>Our email</h3>
-            <a href="mailto:obenginusahsamuel42@gmail.com">obenginusahsamuel42@gmail.com</a>
-            <a href="mailto:obengpiesiesamuel42@gmail.com">obengpiesiesamuel42@gmail.com</a>
-         </div>
-
-         <div class="box">
-            <img src="images/clock-icon.png" alt="">
-            <h3>Opening hours</h3>
-            <p>08:00 to 22:30</p>
-         </div>
-
-         <div class="box">
-            <img src="images/map-icon.png" alt="">
-            <h3>Our address</h3>
-            <a href="https://www.google.com/maps">Kumasi-Apatrapa,Ghana</a>
-         </div>
-
-         <div class="box">
-            <img src="images/phone-icon.png" alt="">
-            <h3>Our number</h3>
-            <a href="tel:0240384438">+233 24 038 4438</a>
-            <a href="tel:0593942191">+233 59 394 2191</a>
-         </div>
-
-      </section>
-
-      <div class="credit">&copy; copyright @ 2023 by <span>Sterling's Design</span> | all rights reserved!</div>
-
-   </footer>
-
-
-
-
-
-
-
-
-   <div class="loader">
-      <img src="images/loader.gif" alt="">
    </div>
 
+</section>
+
+<section class="category">
+
+   <h1 class="title">Food Category</h1>
+
+   <div class="box-container">
+
+      <a href="category.html" class="box">
+         <img src="images/cat-1.png" alt="">
+         <h3>Fast Food</h3>
+      </a>
+   
+      <a href="category.html" class="box">
+         <img src="images/cat-2.png" alt="">
+         </h3>Main Dishes</h3>
+      </a>
+   
+      <a href="category.html" class="box">
+         <img src="images/cat-3.png" alt="">
+         <h3>Drinks</h3>
+      </a>
+   
+      <a href="category.html" class="box">
+         <img src="images/cat-4.png" alt="">
+         <h3>Desserts</h3>
+      </a>
+
+   </div>
+
+</section>
+
+<section class="products">
+
+   <h1 class="title">latest dishes</h1>
+
+   <div class="box-container">
+
+      <form accept="" method="post" class="box">
+         <a href="quick_view.html" class="fas fa-eye"></a>
+         <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+         <img src="uploaded_img/pizza-1.png" alt="">
+         <a href="category.html" class="cat">fast food</a>
+         <div class="name">delicious pizza 01</div>
+         <div class="flex">
+            <div class="price"><span>$</span>3<span>/-</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+         </div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <a href="quick_view.html" class="fas fa-eye"></a>
+         <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+         <img src="uploaded_img/dish-1.png" alt="">
+         <a href="category.html" class="cat">dishes</a>
+         <div class="name">main dish 01</div>
+         <div class="flex">
+            <div class="price"><span>$</span>3<span>/-</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+         </div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <a href="quick_view.html" class="fas fa-eye"></a>
+         <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+         <img src="uploaded_img/burger-1.png" alt="">
+         <a href="category.html" class="cat">fast food</a>
+         <div class="name">chezzy hamburger 01</div>
+         <div class="flex">
+            <div class="price"><span>$</span>3<span>/-</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+         </div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <a href="quick_view.html" class="fas fa-eye"></a>
+         <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+         <img src="uploaded_img/dessert-1.png" alt="">
+         <a href="category.html" class="cat">dessert</a>
+         <div class="name">delicious dessert 01</div>
+         <div class="flex">
+            <div class="price"><span>$</span>3<span>/-</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+         </div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <a href="quick_view.html" class="fas fa-eye"></a>
+         <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+         <img src="uploaded_img/drink-1.png" alt="">
+         <a href="category.html" class="cat">drinks</a>
+         <div class="name">fresh drink 01</div>
+         <div class="flex">
+            <div class="price"><span>$</span>3<span>/-</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+         </div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <a href="quick_view.html" class="fas fa-eye"></a>
+         <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+         <img src="uploaded_img/dish-2.png" alt="">
+         <a href="category.html" class="cat">dishes</a>
+         <div class="name">main dish 02</div>
+         <div class="flex">
+            <div class="price"><span>$</span>3<span>/-</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+         </div>
+      </form>
+
+   </div>
+
+   <div class="more-btn">
+      <a href="menu.html" class="btn">veiw all</a>
+   </div>
+
+</section>
 
 
-   <!-- This Section is script Only -->
 
-<script src="https://cdn.botpress.cloud/webchat/v2/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/2d67fb4d-24cb-41ca-9d0e-21c19cbab026/webchat/v2/config.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-   <script src="js/script.js"></script>
 
-   <script>
-      var swiper = new Swiper(".home-slider", {
-         loop: true,
-         grabCursor: true,
-         effect: "flip",
-         pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-         },
-      });
 
-      // Chatbot toggle script
-      document.addEventListener("DOMContentLoaded", function () {
-         const chatbotContainer = document.getElementById('chatbot-container');
-         const chatbotToggleBtn = document.createElement('button');
-         chatbotToggleBtn.innerText = 'Chat with us!';
-         chatbotToggleBtn.classList.add('chatbot-toggle-btn');
-         document.body.appendChild(chatbotToggleBtn);
+<footer class="footer">
 
-         chatbotToggleBtn.addEventListener('click', () => {
-            if (chatbotContainer.classList.contains('chatbot-hidden')) {
-               chatbotContainer.classList.remove('chatbot-hidden');
-               chatbotContainer.classList.add('chatbot-visible');
-            } else {
-               chatbotContainer.classList.remove('chatbot-visible');
-               chatbotContainer.classList.add('chatbot-hidden');
-            }
-         });
-      });
-   </script>
+   <section class="box-container">
 
-   <!-- Chatbot container -->
-  
-      <!--
-               This Section is script Only
+      <div class="box">
+         <img src="images/email-icon.png" alt="">
+         <h3>Our email</h3>
+         <a href="mailto:obenginusahsamuel42@gmail.com">obenginusahsamuel42@gmail.com</a>
+         <a href="mailto:obengpiesiesamuel42@gmail.com">obengpiesiesamuel42@gmail.com</a>
+      </div>
 
-<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script>
-  window.botpressWebChat.init({
-      "composerPlaceholder": "Chat with bot",
-      "botConversationDescription": "This chatbot was built surprisingly for my project",
-      "botId": "daa69c91-4581-4aa5-b0f8-ba3233d6aa27",
-      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
-      "messagingUrl": "https://messaging.botpress.cloud",
-      "clientId": "daa69c91-4581-4aa5-b0f8-ba3233d6aa27",
-      "webhookId": "9767c756-50ef-4cf7-8ff0-3fd05bf2aacc",
-      "lazySocket": true,
-      "themeName": "prism",
-      "frontendVersion": "v1",
-      "showPoweredBy": true,
-      "theme": "prism",
-      "themeColor": "#2563eb",
-      "allowedOrigins": []
-  });
-</script>
+      <div class="box">
+         <img src="images/clock-icon.png" alt="">
+         <h3>Opening hours</h3>
+         <p>08:00 to 22:30</p>
+      </div>
+
+      <div class="box">
+         <img src="images/map-icon.png" alt="">
+         <h3>Our address</h3>
+         <a href="https://www.google.com/maps">Kumasi-Apatrapa,Ghana</a>
+      </div>
+
+      <div class="box">
+         <img src="images/phone-icon.png" alt="">
+         <h3>Our number</h3>
+         <a href="tel:0240384438">+233 24 038 4438</a>
+         <a href="tel:0593942191">+233 59 394 2191</a>
+      </div>
+
+   </section>
+
+   <div class="credit">&copy; copyright @ 2023 by <span>Sterling's Design</span> | all rights reserved!</div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="loader">
+   <img src="images/loader.gif" alt="">
+</div>
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
@@ -377,7 +289,6 @@ var swiper = new Swiper(".home-slider", {
 });
 
 </script>
--->
-</body>
 
+</body>
 </html>
